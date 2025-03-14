@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HabitTrackersViewController.swift
 //  HabitTracker
 //
 //  Created by Doroteya Galbacheva on 14.03.2025.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HabitTrackersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

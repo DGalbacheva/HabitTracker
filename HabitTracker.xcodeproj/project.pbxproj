@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E4F232452D845464007FD39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232442D845464007FD39B /* AppDelegate.swift */; };
 		E4F232472D845464007FD39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232462D845464007FD39B /* SceneDelegate.swift */; };
-		E4F232492D845464007FD39B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232482D845464007FD39B /* ViewController.swift */; };
+		E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232482D845464007FD39B /* HabitTrackerViewController.swift */; };
 		E4F2324C2D845464007FD39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F2324A2D845464007FD39B /* Main.storyboard */; };
 		E4F2324E2D845467007FD39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F2324D2D845467007FD39B /* Assets.xcassets */; };
 		E4F232512D845467007FD39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F2324F2D845467007FD39B /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		E4F232412D845464007FD39B /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F232442D845464007FD39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F232462D845464007FD39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4F232482D845464007FD39B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4F232482D845464007FD39B /* HabitTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerViewController.swift; sourceTree = "<group>"; };
 		E4F2324B2D845464007FD39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4F2324D2D845467007FD39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4F232502D845467007FD39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,9 +99,9 @@
 		E4F232432D845464007FD39B /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E4F232742D8458DC007FD39B /* HabitTrackersViewController */,
 				E4F232442D845464007FD39B /* AppDelegate.swift */,
 				E4F232462D845464007FD39B /* SceneDelegate.swift */,
-				E4F232482D845464007FD39B /* ViewController.swift */,
 				E4F2324A2D845464007FD39B /* Main.storyboard */,
 				E4F2324D2D845467007FD39B /* Assets.xcassets */,
 				E4F2324F2D845467007FD39B /* LaunchScreen.storyboard */,
@@ -125,6 +125,14 @@
 				E4F232672D845467007FD39B /* HabitTrackerUITestsLaunchTests.swift */,
 			);
 			path = HabitTrackerUITests;
+			sourceTree = "<group>";
+		};
+		E4F232742D8458DC007FD39B /* HabitTrackersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4F232482D845464007FD39B /* HabitTrackerViewController.swift */,
+			);
+			path = HabitTrackersViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4F232492D845464007FD39B /* ViewController.swift in Sources */,
+				E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */,
 				E4F232452D845464007FD39B /* AppDelegate.swift in Sources */,
 				E4F232472D845464007FD39B /* SceneDelegate.swift in Sources */,
 			);
