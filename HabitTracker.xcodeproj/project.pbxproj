@@ -12,6 +12,12 @@
 		E4C7BD632D8AEB9800072E75 /* TrackerRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD622D8AEB9800072E75 /* TrackerRecord.swift */; };
 		E4C7BD652D8AEBC200072E75 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD642D8AEBC200072E75 /* WeekDay.swift */; };
 		E4C7BD672D8AECE900072E75 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD662D8AECE900072E75 /* DataManager.swift */; };
+		E4C7BD692D8AEEA100072E75 /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD682D8AEEA100072E75 /* NewEventViewController.swift */; };
+		E4C7BD6B2D8AEF6000072E75 /* NewHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD6A2D8AEF6000072E75 /* NewHabitViewController.swift */; };
+		E4C7BD6D2D8AEFDE00072E75 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD6C2D8AEFDE00072E75 /* ScheduleViewController.swift */; };
+		E4C7BD702D8AF1A900072E75 /* ScheduleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD6F2D8AF1A900072E75 /* ScheduleDelegate.swift */; };
+		E4C7BD722D8AF1C600072E75 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD712D8AF1C600072E75 /* SectionHeader.swift */; };
+		E4C7BD742D8AF21B00072E75 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD732D8AF21B00072E75 /* ScheduleTableViewCell.swift */; };
 		E4F232452D845464007FD39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232442D845464007FD39B /* AppDelegate.swift */; };
 		E4F232472D845464007FD39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232462D845464007FD39B /* SceneDelegate.swift */; };
 		E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232482D845464007FD39B /* HabitTrackerViewController.swift */; };
@@ -48,6 +54,12 @@
 		E4C7BD622D8AEB9800072E75 /* TrackerRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerRecord.swift; sourceTree = "<group>"; };
 		E4C7BD642D8AEBC200072E75 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 		E4C7BD662D8AECE900072E75 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E4C7BD682D8AEEA100072E75 /* NewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
+		E4C7BD6A2D8AEF6000072E75 /* NewHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitViewController.swift; sourceTree = "<group>"; };
+		E4C7BD6C2D8AEFDE00072E75 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		E4C7BD6F2D8AF1A900072E75 /* ScheduleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDelegate.swift; sourceTree = "<group>"; };
+		E4C7BD712D8AF1C600072E75 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		E4C7BD732D8AF21B00072E75 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		E4F232412D845464007FD39B /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F232442D845464007FD39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F232462D845464007FD39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +113,17 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E4C7BD6E2D8AF19700072E75 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				E4C7BD6C2D8AEFDE00072E75 /* ScheduleViewController.swift */,
+				E4C7BD6F2D8AF1A900072E75 /* ScheduleDelegate.swift */,
+				E4C7BD712D8AF1C600072E75 /* SectionHeader.swift */,
+				E4C7BD732D8AF21B00072E75 /* ScheduleTableViewCell.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
 		E4F232382D845464007FD39B = {
 			isa = PBXGroup;
 			children = (
@@ -124,10 +147,13 @@
 		E4F232432D845464007FD39B /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E4C7BD6E2D8AF19700072E75 /* Schedule */,
 				E4C7BD5D2D8AEB6900072E75 /* Models */,
 				E4F232812D846596007FD39B /* StatisticsViewController */,
 				E4F232742D8458DC007FD39B /* HabitTrackersViewController */,
 				E4C7BD662D8AECE900072E75 /* DataManager.swift */,
+				E4C7BD682D8AEEA100072E75 /* NewEventViewController.swift */,
+				E4C7BD6A2D8AEF6000072E75 /* NewHabitViewController.swift */,
 				E4F232442D845464007FD39B /* AppDelegate.swift */,
 				E4F232462D845464007FD39B /* SceneDelegate.swift */,
 				E4F2324A2D845464007FD39B /* Main.storyboard */,
@@ -303,13 +329,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C7BD6D2D8AEFDE00072E75 /* ScheduleViewController.swift in Sources */,
 				E4C7BD652D8AEBC200072E75 /* WeekDay.swift in Sources */,
+				E4C7BD722D8AF1C600072E75 /* SectionHeader.swift in Sources */,
 				E4C7BD672D8AECE900072E75 /* DataManager.swift in Sources */,
+				E4C7BD692D8AEEA100072E75 /* NewEventViewController.swift in Sources */,
 				E4C7BD5F2D8AEB8300072E75 /* Tracker.swift in Sources */,
+				E4C7BD742D8AF21B00072E75 /* ScheduleTableViewCell.swift in Sources */,
 				E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */,
 				E4F232452D845464007FD39B /* AppDelegate.swift in Sources */,
 				E4F232762D84611A007FD39B /* HabitTrackerCollectionViewCell.swift in Sources */,
 				E4F232782D8461F4007FD39B /* StatisticsViewController.swift in Sources */,
+				E4C7BD702D8AF1A900072E75 /* ScheduleDelegate.swift in Sources */,
+				E4C7BD6B2D8AEF6000072E75 /* NewHabitViewController.swift in Sources */,
 				E4C7BD632D8AEB9800072E75 /* TrackerRecord.swift in Sources */,
 				E4F232472D845464007FD39B /* SceneDelegate.swift in Sources */,
 				E4C7BD612D8AEB8E00072E75 /* TrackerCategory.swift in Sources */,

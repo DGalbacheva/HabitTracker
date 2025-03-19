@@ -13,7 +13,7 @@ final class ScheduleViewController: UIViewController {
     
     private var selectedDays = [WeekDay]()
     
-    //  weak var delegate: ScheduleDelegate?
+    weak var delegate: ScheduleDelegate?
     
     // MARK: - UI Elements
     
@@ -57,19 +57,6 @@ final class ScheduleViewController: UIViewController {
         addSubviews()
     }
     
-    //Track and save the days of the week marked in the schedule in the selectedDays array
-    @objc private func switchChanged(_ sender: UISwitch) {
-        guard let day = WeekDay(rawValue: sender.tag + 1) else { return }
-        if sender.isOn {
-            selectedDays.append(day)
-        } else {
-            if let index = selectedDays.firstIndex(of: day) {
-                selectedDays.remove(at: index)
-            }
-        }
-    }
-    
-    
     @objc private func doneButtonTapped() {
         delegate?.weekDaysChanged(weedDays: selectedDays)
         self.dismiss(animated: true, completion: nil)
@@ -101,6 +88,7 @@ final class ScheduleViewController: UIViewController {
             doneButton.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
+}
     
     // MARK: - Extensions
     
@@ -110,23 +98,23 @@ final class ScheduleViewController: UIViewController {
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleTableViewCell", for: indexPath) as! ScheduleTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleTableViewCell", for: indexPath) as? ScheduleTableViewCell 
             
             let daysOfWeek = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
-            cell.textLabel?.text = daysOfWeek[indexPath.row]
-            cell.textLabel?.font = UIFont.systemFont(ofSize: 17)
+            cell?.textLabel?.text = daysOfWeek[indexPath.row]
+            cell?.textLabel?.font = UIFont.systemFont(ofSize: 17)
             
             let switchView = UISwitch(frame: .zero)
             switchView.onTintColor = .ypBlue
             switchView.tag = indexPath.row //Save the line number as a tag
             switchView.addTarget(self, action: #selector(switchChanged), for: .valueChanged)
-            cell.accessoryView = switchView
+            cell?.accessoryView = switchView
             
             if indexPath.row == daysOfWeek.count - 1 {
-                cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: tableView.bounds.width)
+                cell?.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: tableView.bounds.width)
             }
             
-            return cell
+            return cell 
         }
         
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
