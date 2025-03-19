@@ -11,6 +11,7 @@
 		E4C7BD612D8AEB8E00072E75 /* TrackerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD602D8AEB8E00072E75 /* TrackerCategory.swift */; };
 		E4C7BD632D8AEB9800072E75 /* TrackerRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD622D8AEB9800072E75 /* TrackerRecord.swift */; };
 		E4C7BD652D8AEBC200072E75 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD642D8AEBC200072E75 /* WeekDay.swift */; };
+		E4C7BD672D8AECE900072E75 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD662D8AECE900072E75 /* DataManager.swift */; };
 		E4F232452D845464007FD39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232442D845464007FD39B /* AppDelegate.swift */; };
 		E4F232472D845464007FD39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232462D845464007FD39B /* SceneDelegate.swift */; };
 		E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232482D845464007FD39B /* HabitTrackerViewController.swift */; };
@@ -46,6 +47,7 @@
 		E4C7BD602D8AEB8E00072E75 /* TrackerCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCategory.swift; sourceTree = "<group>"; };
 		E4C7BD622D8AEB9800072E75 /* TrackerRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerRecord.swift; sourceTree = "<group>"; };
 		E4C7BD642D8AEBC200072E75 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		E4C7BD662D8AECE900072E75 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E4F232412D845464007FD39B /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F232442D845464007FD39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F232462D845464007FD39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				E4C7BD5D2D8AEB6900072E75 /* Models */,
 				E4F232812D846596007FD39B /* StatisticsViewController */,
 				E4F232742D8458DC007FD39B /* HabitTrackersViewController */,
+				E4C7BD662D8AECE900072E75 /* DataManager.swift */,
 				E4F232442D845464007FD39B /* AppDelegate.swift */,
 				E4F232462D845464007FD39B /* SceneDelegate.swift */,
 				E4F2324A2D845464007FD39B /* Main.storyboard */,
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4C7BD652D8AEBC200072E75 /* WeekDay.swift in Sources */,
+				E4C7BD672D8AECE900072E75 /* DataManager.swift in Sources */,
 				E4C7BD5F2D8AEB8300072E75 /* Tracker.swift in Sources */,
 				E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */,
 				E4F232452D845464007FD39B /* AppDelegate.swift in Sources */,
