@@ -20,7 +20,7 @@ final class DataManager {
                             [Tracker(id: UUID(),  title: "Поливать растения", color: .colorSet5, emoji: "❤️", schedule: [.monday])]),
         
         TrackerCategory(title: "Радостные мелочи", trackers:
-                            [Tracker(id: UUID(),  title: "Прогулка с кошкой", color: .colorSet2, emoji: "😻", schedule: [.monday, .sunday, .thursday]),
+                            [Tracker(id: UUID(),  title: "Прогулка с кошкой", color: .colorSet2, emoji: "🐱", schedule: [.monday, .sunday, .thursday]),
                              Tracker(id: UUID(),  title: "Бабушка прислала открытку в вотсаппе", color: .colorSet1, emoji: "🌺", schedule: [.wednesday, .thursday, .saturday]),
                              Tracker(id: UUID(),  title: "Свидания в апреле", color: .colorSet14, emoji: "❤️", schedule: [.monday, .friday])
                             ])

@@ -7,13 +7,20 @@
 
 import UIKit
 
-//MARK: - Weekday Cell
+protocol ScheduleViewControllerDelegate: AnyObject {
+    func weekdaysIsPicked(weekDaysArray: [WeekDay])
+    func updateCreateButtonState()
+}
+
+// MARK: - Weekday Cell
 
 final class ScheduleViewController: UIViewController {
     
-    private var selectedDays = [WeekDay]()
+    var weekDaysArrayFromVC: [WeekDay] = []
     
-    weak var delegate: ScheduleDelegate?
+    weak var delegate: ScheduleViewControllerDelegate?
+    
+    private var switchStates: [Bool] = [false, false, false, false, false, false, false]
     
     // MARK: - UI Elements
     
@@ -56,10 +63,29 @@ final class ScheduleViewController: UIViewController {
         
         addSubviews()
     }
-    
+
     @objc private func doneButtonTapped() {
-        delegate?.weekDaysChanged(weedDays: selectedDays)
-        self.dismiss(animated: true, completion: nil)
+        delegate?.weekdaysIsPicked(weekDaysArray: weekDaysArrayFromVC)
+        delegate?.updateCreateButtonState()
+        dismiss(animated: true)
+    }
+    
+    private func activateDoneButton() {
+        doneButton.backgroundColor = .blackDay
+        doneButton.isEnabled = true
+    }
+    
+    private func deactivateDoneButton() {
+        doneButton.backgroundColor = .ypGray
+        doneButton.isEnabled = false
+    }
+    
+    func updatedoneButtonnState() {
+        if switchStates.contains(true) {
+            activateDoneButton()
+        } else {
+            deactivateDoneButton()
+        }
     }
     
     // MARK: - Layout
@@ -89,36 +115,52 @@ final class ScheduleViewController: UIViewController {
         ])
     }
 }
+
+// MARK: - Extensions
+
+extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        WeekDay.allCases.count
+    }
     
-    // MARK: - Extensions
-    
-    extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 7
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ScheduleTableViewCell.identifier, for: indexPath) as? ScheduleTableViewCell else {
+            assertionFailure("Не удалось выполнить приведение к WeekdaysTableViewCell")
+            return UITableViewCell()
         }
         
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleTableViewCell", for: indexPath) as? ScheduleTableViewCell 
-            
-            let daysOfWeek = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
-            cell?.textLabel?.text = daysOfWeek[indexPath.row]
-            cell?.textLabel?.font = UIFont.systemFont(ofSize: 17)
-            
-            let switchView = UISwitch(frame: .zero)
-            switchView.onTintColor = .ypBlue
-            switchView.tag = indexPath.row //Save the line number as a tag
-            switchView.addTarget(self, action: #selector(switchChanged), for: .valueChanged)
-            cell?.accessoryView = switchView
-            
-            if indexPath.row == daysOfWeek.count - 1 {
-                cell?.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: tableView.bounds.width)
+        let weekday = WeekDay.allCases[indexPath.row]
+        cell.configureCell(textLable: weekday.rawValue)
+        for i in weekDaysArrayFromVC {
+            if i.rawValue == weekday.rawValue {
+                self.switchStates[indexPath.row] = true
+                cell.configureSwitchButtonStat(isOn: true)
             }
-            
-            return cell 
         }
-        
-        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 75
+        cell.backgroundColor = .backgroundDay
+        cell.delegate = self
+        updatedoneButtonnState()
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
+    }
+}
+
+extension ScheduleViewController: ScheduleTableViewCellDelegate {
+    func switchValueChanged(in cell: ScheduleTableViewCell) {
+        if let indexPath = weekDayTableView.indexPath(for: cell) {
+            switchStates[indexPath.row] = cell.checkSwitchButtonStat()
+            let weekDay = WeekDay.allCases[indexPath.row]
+            if let weekdayIndex = weekDaysArrayFromVC.firstIndex(where: {$0 == weekDay}) {
+                weekDaysArrayFromVC.remove(at: weekdayIndex)
+                updatedoneButtonnState()
+                return
+            }
+            weekDaysArrayFromVC.append(weekDay)
+            updatedoneButtonnState()
         }
     }
 }
+

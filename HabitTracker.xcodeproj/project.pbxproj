@@ -12,12 +12,22 @@
 		E4C7BD632D8AEB9800072E75 /* TrackerRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD622D8AEB9800072E75 /* TrackerRecord.swift */; };
 		E4C7BD652D8AEBC200072E75 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD642D8AEBC200072E75 /* WeekDay.swift */; };
 		E4C7BD672D8AECE900072E75 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD662D8AECE900072E75 /* DataManager.swift */; };
-		E4C7BD692D8AEEA100072E75 /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD682D8AEEA100072E75 /* NewEventViewController.swift */; };
-		E4C7BD6B2D8AEF6000072E75 /* NewHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD6A2D8AEF6000072E75 /* NewHabitViewController.swift */; };
 		E4C7BD6D2D8AEFDE00072E75 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD6C2D8AEFDE00072E75 /* ScheduleViewController.swift */; };
-		E4C7BD702D8AF1A900072E75 /* ScheduleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD6F2D8AF1A900072E75 /* ScheduleDelegate.swift */; };
 		E4C7BD722D8AF1C600072E75 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD712D8AF1C600072E75 /* SectionHeader.swift */; };
 		E4C7BD742D8AF21B00072E75 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD732D8AF21B00072E75 /* ScheduleTableViewCell.swift */; };
+		E4C7BD7C2D8C3C4B00072E75 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD762D8C3C4B00072E75 /* CoreDataManager.swift */; };
+		E4C7BD7D2D8C3C4B00072E75 /* TrackerRecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD772D8C3C4B00072E75 /* TrackerRecordStore.swift */; };
+		E4C7BD7E2D8C3C4B00072E75 /* TrackerCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD782D8C3C4B00072E75 /* TrackerCoreData.xcdatamodeld */; };
+		E4C7BD7F2D8C3C4B00072E75 /* TrackerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD7A2D8C3C4B00072E75 /* TrackerStore.swift */; };
+		E4C7BD802D8C3C4B00072E75 /* TrackerCategoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD7B2D8C3C4B00072E75 /* TrackerCategoryStore.swift */; };
+		E4C7BD832D8C3CA100072E75 /* UIColorMarshalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD822D8C3CA100072E75 /* UIColorMarshalling.swift */; };
+		E4C7BD852D8C3E8100072E75 /* ExtensionForArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD842D8C3E8100072E75 /* ExtensionForArray.swift */; };
+		E4C7BD872D8C3E9100072E75 /* ExtensionForString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD862D8C3E9100072E75 /* ExtensionForString.swift */; };
+		E4C7BD892D8C40DE00072E75 /* TrackerTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD882D8C40DE00072E75 /* TrackerTypeSelectionViewController.swift */; };
+		E4C7BD8C2D8C424900072E75 /* HabitOrEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD8B2D8C424900072E75 /* HabitOrEventViewController.swift */; };
+		E4C7BD8E2D8C428600072E75 /* HabitOrEventTableViewСеll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD8D2D8C428600072E75 /* HabitOrEventTableViewСеll.swift */; };
+		E4C7BD902D8C42A700072E75 /* HabitOrEventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD8F2D8C42A700072E75 /* HabitOrEventCollectionViewCell.swift */; };
+		E4C7BD922D8C42CD00072E75 /* DataForHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD912D8C42CD00072E75 /* DataForHabit.swift */; };
 		E4F232452D845464007FD39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232442D845464007FD39B /* AppDelegate.swift */; };
 		E4F232472D845464007FD39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232462D845464007FD39B /* SceneDelegate.swift */; };
 		E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232482D845464007FD39B /* HabitTrackerViewController.swift */; };
@@ -54,12 +64,22 @@
 		E4C7BD622D8AEB9800072E75 /* TrackerRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerRecord.swift; sourceTree = "<group>"; };
 		E4C7BD642D8AEBC200072E75 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 		E4C7BD662D8AECE900072E75 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		E4C7BD682D8AEEA100072E75 /* NewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
-		E4C7BD6A2D8AEF6000072E75 /* NewHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitViewController.swift; sourceTree = "<group>"; };
 		E4C7BD6C2D8AEFDE00072E75 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		E4C7BD6F2D8AF1A900072E75 /* ScheduleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDelegate.swift; sourceTree = "<group>"; };
 		E4C7BD712D8AF1C600072E75 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		E4C7BD732D8AF21B00072E75 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		E4C7BD762D8C3C4B00072E75 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E4C7BD772D8C3C4B00072E75 /* TrackerRecordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerRecordStore.swift; sourceTree = "<group>"; };
+		E4C7BD792D8C3C4B00072E75 /* TrackerCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrackerCoreData.xcdatamodel; sourceTree = "<group>"; };
+		E4C7BD7A2D8C3C4B00072E75 /* TrackerStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerStore.swift; sourceTree = "<group>"; };
+		E4C7BD7B2D8C3C4B00072E75 /* TrackerCategoryStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerCategoryStore.swift; sourceTree = "<group>"; };
+		E4C7BD822D8C3CA100072E75 /* UIColorMarshalling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorMarshalling.swift; sourceTree = "<group>"; };
+		E4C7BD842D8C3E8100072E75 /* ExtensionForArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForArray.swift; sourceTree = "<group>"; };
+		E4C7BD862D8C3E9100072E75 /* ExtensionForString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForString.swift; sourceTree = "<group>"; };
+		E4C7BD882D8C40DE00072E75 /* TrackerTypeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTypeSelectionViewController.swift; sourceTree = "<group>"; };
+		E4C7BD8B2D8C424900072E75 /* HabitOrEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitOrEventViewController.swift; sourceTree = "<group>"; };
+		E4C7BD8D2D8C428600072E75 /* HabitOrEventTableViewСеll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitOrEventTableViewСеll.swift"; sourceTree = "<group>"; };
+		E4C7BD8F2D8C42A700072E75 /* HabitOrEventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitOrEventCollectionViewCell.swift; sourceTree = "<group>"; };
+		E4C7BD912D8C42CD00072E75 /* DataForHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForHabit.swift; sourceTree = "<group>"; };
 		E4F232412D845464007FD39B /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F232442D845464007FD39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F232462D845464007FD39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,11 +137,42 @@
 			isa = PBXGroup;
 			children = (
 				E4C7BD6C2D8AEFDE00072E75 /* ScheduleViewController.swift */,
-				E4C7BD6F2D8AF1A900072E75 /* ScheduleDelegate.swift */,
-				E4C7BD712D8AF1C600072E75 /* SectionHeader.swift */,
 				E4C7BD732D8AF21B00072E75 /* ScheduleTableViewCell.swift */,
 			);
 			path = Schedule;
+			sourceTree = "<group>";
+		};
+		E4C7BD752D8C3C4B00072E75 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E4C7BD762D8C3C4B00072E75 /* CoreDataManager.swift */,
+				E4C7BD772D8C3C4B00072E75 /* TrackerRecordStore.swift */,
+				E4C7BD782D8C3C4B00072E75 /* TrackerCoreData.xcdatamodeld */,
+				E4C7BD7A2D8C3C4B00072E75 /* TrackerStore.swift */,
+				E4C7BD7B2D8C3C4B00072E75 /* TrackerCategoryStore.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E4C7BD812D8C3C9700072E75 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E4C7BD822D8C3CA100072E75 /* UIColorMarshalling.swift */,
+				E4C7BD842D8C3E8100072E75 /* ExtensionForArray.swift */,
+				E4C7BD862D8C3E9100072E75 /* ExtensionForString.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E4C7BD8A2D8C422100072E75 /* HabitOrEventViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4C7BD8B2D8C424900072E75 /* HabitOrEventViewController.swift */,
+				E4C7BD8D2D8C428600072E75 /* HabitOrEventTableViewСеll.swift */,
+				E4C7BD8F2D8C42A700072E75 /* HabitOrEventCollectionViewCell.swift */,
+				E4C7BD912D8C42CD00072E75 /* DataForHabit.swift */,
+			);
+			path = HabitOrEventViewController;
 			sourceTree = "<group>";
 		};
 		E4F232382D845464007FD39B = {
@@ -147,19 +198,20 @@
 		E4F232432D845464007FD39B /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E4C7BD8A2D8C422100072E75 /* HabitOrEventViewController */,
+				E4C7BD812D8C3C9700072E75 /* Helpers */,
+				E4C7BD752D8C3C4B00072E75 /* CoreData */,
 				E4C7BD6E2D8AF19700072E75 /* Schedule */,
 				E4C7BD5D2D8AEB6900072E75 /* Models */,
 				E4F232812D846596007FD39B /* StatisticsViewController */,
 				E4F232742D8458DC007FD39B /* HabitTrackersViewController */,
-				E4C7BD662D8AECE900072E75 /* DataManager.swift */,
-				E4C7BD682D8AEEA100072E75 /* NewEventViewController.swift */,
-				E4C7BD6A2D8AEF6000072E75 /* NewHabitViewController.swift */,
 				E4F232442D845464007FD39B /* AppDelegate.swift */,
 				E4F232462D845464007FD39B /* SceneDelegate.swift */,
 				E4F2324A2D845464007FD39B /* Main.storyboard */,
 				E4F2324D2D845467007FD39B /* Assets.xcassets */,
 				E4F2324F2D845467007FD39B /* LaunchScreen.storyboard */,
 				E4F232522D845467007FD39B /* Info.plist */,
+				E4C7BD882D8C40DE00072E75 /* TrackerTypeSelectionViewController.swift */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -186,6 +238,8 @@
 			children = (
 				E4F232752D84611A007FD39B /* HabitTrackerCollectionViewCell.swift */,
 				E4F232482D845464007FD39B /* HabitTrackerViewController.swift */,
+				E4C7BD662D8AECE900072E75 /* DataManager.swift */,
+				E4C7BD712D8AF1C600072E75 /* SectionHeader.swift */,
 			);
 			path = HabitTrackersViewController;
 			sourceTree = "<group>";
@@ -333,18 +387,28 @@
 				E4C7BD652D8AEBC200072E75 /* WeekDay.swift in Sources */,
 				E4C7BD722D8AF1C600072E75 /* SectionHeader.swift in Sources */,
 				E4C7BD672D8AECE900072E75 /* DataManager.swift in Sources */,
-				E4C7BD692D8AEEA100072E75 /* NewEventViewController.swift in Sources */,
+				E4C7BD7C2D8C3C4B00072E75 /* CoreDataManager.swift in Sources */,
+				E4C7BD8C2D8C424900072E75 /* HabitOrEventViewController.swift in Sources */,
+				E4C7BD902D8C42A700072E75 /* HabitOrEventCollectionViewCell.swift in Sources */,
+				E4C7BD892D8C40DE00072E75 /* TrackerTypeSelectionViewController.swift in Sources */,
 				E4C7BD5F2D8AEB8300072E75 /* Tracker.swift in Sources */,
+				E4C7BD852D8C3E8100072E75 /* ExtensionForArray.swift in Sources */,
 				E4C7BD742D8AF21B00072E75 /* ScheduleTableViewCell.swift in Sources */,
 				E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */,
+				E4C7BD832D8C3CA100072E75 /* UIColorMarshalling.swift in Sources */,
 				E4F232452D845464007FD39B /* AppDelegate.swift in Sources */,
 				E4F232762D84611A007FD39B /* HabitTrackerCollectionViewCell.swift in Sources */,
+				E4C7BD7E2D8C3C4B00072E75 /* TrackerCoreData.xcdatamodeld in Sources */,
 				E4F232782D8461F4007FD39B /* StatisticsViewController.swift in Sources */,
-				E4C7BD702D8AF1A900072E75 /* ScheduleDelegate.swift in Sources */,
-				E4C7BD6B2D8AEF6000072E75 /* NewHabitViewController.swift in Sources */,
+				E4C7BD7F2D8C3C4B00072E75 /* TrackerStore.swift in Sources */,
+				E4C7BD8E2D8C428600072E75 /* HabitOrEventTableViewСеll.swift in Sources */,
+				E4C7BD7D2D8C3C4B00072E75 /* TrackerRecordStore.swift in Sources */,
+				E4C7BD872D8C3E9100072E75 /* ExtensionForString.swift in Sources */,
 				E4C7BD632D8AEB9800072E75 /* TrackerRecord.swift in Sources */,
 				E4F232472D845464007FD39B /* SceneDelegate.swift in Sources */,
 				E4C7BD612D8AEB8E00072E75 /* TrackerCategory.swift in Sources */,
+				E4C7BD922D8C42CD00072E75 /* DataForHabit.swift in Sources */,
+				E4C7BD802D8C3C4B00072E75 /* TrackerCategoryStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +755,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E4C7BD782D8C3C4B00072E75 /* TrackerCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E4C7BD792D8C3C4B00072E75 /* TrackerCoreData.xcdatamodel */,
+			);
+			currentVersion = E4C7BD792D8C3C4B00072E75 /* TrackerCoreData.xcdatamodel */;
+			path = TrackerCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E4F232392D845464007FD39B /* Project object */;
 }
