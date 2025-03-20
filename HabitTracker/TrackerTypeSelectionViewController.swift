@@ -35,7 +35,7 @@ final class TrackerTypeSelectionViewController: UIViewController {
         habitButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
         habitButton.layer.cornerRadius = 16
         habitButton.layer.masksToBounds = true
-        
+        habitButton.addTarget(self, action: #selector(habitButtonPress), for: .touchUpInside)
         
         eventButton.setTitle("Нерегулярное событие", for: .normal)
         eventButton.backgroundColor = .blackDay
@@ -43,7 +43,7 @@ final class TrackerTypeSelectionViewController: UIViewController {
         eventButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
         eventButton.layer.cornerRadius = 16
         eventButton.layer.masksToBounds = true
-        
+        eventButton.addTarget(self, action: #selector(eventButtonPress), for: .touchUpInside)
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         habitButton.translatesAutoresizingMaskIntoConstraints = false
