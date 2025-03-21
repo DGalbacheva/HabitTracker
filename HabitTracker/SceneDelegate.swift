@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: scene)
         
-        let trackersViewController = HabitTrackersViewController()
+        let trackersViewController = HabitTrackerViewController()
         trackersViewController.tabBarItem.image = UIImage(named: "TabBarTrackerIcon")
         trackersViewController.tabBarItem.title = "Трекеры"
         

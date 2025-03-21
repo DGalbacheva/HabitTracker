@@ -28,6 +28,8 @@
 		E4C7BD8E2D8C428600072E75 /* HabitOrEventTableViewСеll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD8D2D8C428600072E75 /* HabitOrEventTableViewСеll.swift */; };
 		E4C7BD902D8C42A700072E75 /* HabitOrEventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD8F2D8C42A700072E75 /* HabitOrEventCollectionViewCell.swift */; };
 		E4C7BD922D8C42CD00072E75 /* DataForHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD912D8C42CD00072E75 /* DataForHabit.swift */; };
+		E4C7BD952D8DA1BA00072E75 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD942D8DA1BA00072E75 /* CategoryViewController.swift */; };
+		E4C7BD972D8DA1D800072E75 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD962D8DA1D800072E75 /* CategoryTableViewCell.swift */; };
 		E4F232452D845464007FD39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232442D845464007FD39B /* AppDelegate.swift */; };
 		E4F232472D845464007FD39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232462D845464007FD39B /* SceneDelegate.swift */; };
 		E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232482D845464007FD39B /* HabitTrackerViewController.swift */; };
@@ -80,6 +82,8 @@
 		E4C7BD8D2D8C428600072E75 /* HabitOrEventTableViewСеll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitOrEventTableViewСеll.swift"; sourceTree = "<group>"; };
 		E4C7BD8F2D8C42A700072E75 /* HabitOrEventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitOrEventCollectionViewCell.swift; sourceTree = "<group>"; };
 		E4C7BD912D8C42CD00072E75 /* DataForHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForHabit.swift; sourceTree = "<group>"; };
+		E4C7BD942D8DA1BA00072E75 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E4C7BD962D8DA1D800072E75 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		E4F232412D845464007FD39B /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F232442D845464007FD39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F232462D845464007FD39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +179,15 @@
 			path = HabitOrEventViewController;
 			sourceTree = "<group>";
 		};
+		E4C7BD932D8DA19F00072E75 /* CategoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4C7BD942D8DA1BA00072E75 /* CategoryViewController.swift */,
+				E4C7BD962D8DA1D800072E75 /* CategoryTableViewCell.swift */,
+			);
+			path = CategoryViewController;
+			sourceTree = "<group>";
+		};
 		E4F232382D845464007FD39B = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +211,7 @@
 		E4F232432D845464007FD39B /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E4C7BD932D8DA19F00072E75 /* CategoryViewController */,
 				E4C7BD8A2D8C422100072E75 /* HabitOrEventViewController */,
 				E4C7BD812D8C3C9700072E75 /* Helpers */,
 				E4C7BD752D8C3C4B00072E75 /* CoreData */,
@@ -394,11 +408,13 @@
 				E4C7BD5F2D8AEB8300072E75 /* Tracker.swift in Sources */,
 				E4C7BD852D8C3E8100072E75 /* ExtensionForArray.swift in Sources */,
 				E4C7BD742D8AF21B00072E75 /* ScheduleTableViewCell.swift in Sources */,
+				E4C7BD972D8DA1D800072E75 /* CategoryTableViewCell.swift in Sources */,
 				E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */,
 				E4C7BD832D8C3CA100072E75 /* UIColorMarshalling.swift in Sources */,
 				E4F232452D845464007FD39B /* AppDelegate.swift in Sources */,
 				E4F232762D84611A007FD39B /* HabitTrackerCollectionViewCell.swift in Sources */,
 				E4C7BD7E2D8C3C4B00072E75 /* TrackerCoreData.xcdatamodeld in Sources */,
+				E4C7BD952D8DA1BA00072E75 /* CategoryViewController.swift in Sources */,
 				E4F232782D8461F4007FD39B /* StatisticsViewController.swift in Sources */,
 				E4C7BD7F2D8C3C4B00072E75 /* TrackerStore.swift in Sources */,
 				E4C7BD8E2D8C428600072E75 /* HabitOrEventTableViewСеll.swift in Sources */,
