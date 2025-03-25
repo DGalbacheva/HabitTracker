@@ -42,6 +42,7 @@ final class CreateCategoryViewController: UIViewController {
         categoryTextField.leftView = leftView
         categoryTextField.leftViewMode = .always
         categoryTextField.clearButtonMode = .whileEditing
+        categoryTextField.addTarget(self, action: #selector(textFieldEditingChanged), for: .editingChanged)
         
         doneButton.setTitle("Готово", for: .normal)
         doneButton.backgroundColor = .ypGray
@@ -49,6 +50,8 @@ final class CreateCategoryViewController: UIViewController {
         doneButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
         doneButton.layer.cornerRadius = 16
         doneButton.layer.masksToBounds = true
+        doneButton.addTarget(self, action: #selector(doneButtonClicked), for: .touchUpInside)
+        doneButton.isEnabled = false
         
         view.addSubview(titleLabel)
         view.addSubview(categoryTextField)
