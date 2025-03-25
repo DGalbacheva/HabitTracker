@@ -30,6 +30,7 @@
 		E4C7BD922D8C42CD00072E75 /* DataForHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD912D8C42CD00072E75 /* DataForHabit.swift */; };
 		E4C7BD952D8DA1BA00072E75 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD942D8DA1BA00072E75 /* CategoryViewController.swift */; };
 		E4C7BD972D8DA1D800072E75 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD962D8DA1D800072E75 /* CategoryTableViewCell.swift */; };
+		E4C7BD9B2D92D7F600072E75 /* CreateCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7BD9A2D92D7F600072E75 /* CreateCategoryViewController.swift */; };
 		E4F232452D845464007FD39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232442D845464007FD39B /* AppDelegate.swift */; };
 		E4F232472D845464007FD39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232462D845464007FD39B /* SceneDelegate.swift */; };
 		E4F232492D845464007FD39B /* HabitTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F232482D845464007FD39B /* HabitTrackerViewController.swift */; };
@@ -84,6 +85,7 @@
 		E4C7BD912D8C42CD00072E75 /* DataForHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForHabit.swift; sourceTree = "<group>"; };
 		E4C7BD942D8DA1BA00072E75 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E4C7BD962D8DA1D800072E75 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		E4C7BD9A2D92D7F600072E75 /* CreateCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryViewController.swift; sourceTree = "<group>"; };
 		E4F232412D845464007FD39B /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F232442D845464007FD39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F232462D845464007FD39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,22 @@
 			path = CategoryViewController;
 			sourceTree = "<group>";
 		};
+		E4C7BD982D92D78200072E75 /* TrackerTypeSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4C7BD882D8C40DE00072E75 /* TrackerTypeSelectionViewController.swift */,
+			);
+			path = TrackerTypeSelectionViewController;
+			sourceTree = "<group>";
+		};
+		E4C7BD992D92D7D700072E75 /* CreateCategoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4C7BD9A2D92D7F600072E75 /* CreateCategoryViewController.swift */,
+			);
+			path = CreateCategoryViewController;
+			sourceTree = "<group>";
+		};
 		E4F232382D845464007FD39B = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +229,8 @@
 		E4F232432D845464007FD39B /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E4C7BD992D92D7D700072E75 /* CreateCategoryViewController */,
+				E4C7BD982D92D78200072E75 /* TrackerTypeSelectionViewController */,
 				E4C7BD932D8DA19F00072E75 /* CategoryViewController */,
 				E4C7BD8A2D8C422100072E75 /* HabitOrEventViewController */,
 				E4C7BD812D8C3C9700072E75 /* Helpers */,
@@ -225,7 +245,6 @@
 				E4F2324D2D845467007FD39B /* Assets.xcassets */,
 				E4F2324F2D845467007FD39B /* LaunchScreen.storyboard */,
 				E4F232522D845467007FD39B /* Info.plist */,
-				E4C7BD882D8C40DE00072E75 /* TrackerTypeSelectionViewController.swift */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -401,6 +420,7 @@
 				E4C7BD652D8AEBC200072E75 /* WeekDay.swift in Sources */,
 				E4C7BD722D8AF1C600072E75 /* SectionHeader.swift in Sources */,
 				E4C7BD672D8AECE900072E75 /* DataManager.swift in Sources */,
+				E4C7BD9B2D92D7F600072E75 /* CreateCategoryViewController.swift in Sources */,
 				E4C7BD7C2D8C3C4B00072E75 /* CoreDataManager.swift in Sources */,
 				E4C7BD8C2D8C424900072E75 /* HabitOrEventViewController.swift in Sources */,
 				E4C7BD902D8C42A700072E75 /* HabitOrEventCollectionViewCell.swift in Sources */,
